@@ -2,7 +2,10 @@
 {% block title 'About Us | ' ~ parent()%}
 
         {% block body %}
-            <h1>hello  &hearts; les amis</h1>
-            <p><a href="{{ path('app_home') }}">Revenir à la page d'accueil</a></p>
+
+            <h1 class="text-gray-700">hello <span class="text-teal-600">&hearts; </span> les amis</h1>
+            <img src="{{ asset('images/hk.jpg') }}"  class="my-12 rounded-full shadow-md" alt="developper">
+
+            <p><a href="{{ path('app_home') }}" class=" mt-5 text-indigo-500 hover:text-indigo-600 underline">Revenir à la page d'accueil</a></p>
         {% endblock %}
 

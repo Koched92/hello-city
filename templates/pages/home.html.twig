@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
         {% block body %}
-                <h1>Hello from Pierrelatte</h1>
-                <p>It's currently {{ 'now' |date('h:i A') }}</p>
+            <img src="{{ asset('images/Pierrelatte.png') }}" alt="pirrelatte FLag" class="h-40 mt-12 ">
+                <h1 class=" mt-5 text-3xl sm:text-5xl font-semibold text-indigo-600" >Hello from Pierrelatte</h1>
+                <p class="text-lg text-gray-800">It's currently {{ 'now' |date('h:i A') }}</p>
 
         {% endblock %}
